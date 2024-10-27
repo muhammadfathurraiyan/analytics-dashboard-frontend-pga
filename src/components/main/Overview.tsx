@@ -43,13 +43,13 @@ export default function Overview() {
     {
       title: "Total fare amount",
       total: data?.reduce((prev, curr) => prev + parseInt(curr.fare_amount), 0),
-      description: "Total fare amount 2014",
+      description: "Total fare amount in 2014",
       icon: DollarSign,
     },
     {
       title: "Total trip",
       total: data?.length,
-      description: "Total trip 2014",
+      description: "Total trip in 2014",
       icon: MapPinCheck,
     },
     {
@@ -58,7 +58,7 @@ export default function Overview() {
         (prev, curr) => prev + parseInt(curr.trip_distance),
         0
       ),
-      description: "Total trip distance 2014",
+      description: "Total trip distance in 2014",
       icon: Car,
     },
     {
@@ -67,7 +67,7 @@ export default function Overview() {
         (prev, curr) => prev + parseInt(curr.passenger_count),
         0
       ),
-      description: "Total passengers 2014",
+      description: "Total passengers in 2014",
       icon: Users2,
     },
   ];

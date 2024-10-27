@@ -142,7 +142,7 @@ export default function Analytics() {
         chartConfig={passengerChartConfig}
         chartData={passengerChartData}
         title="passenger"
-        label="Passenger"
+        label="Passengers"
       />
       <BarChartComponent />
     </div>
