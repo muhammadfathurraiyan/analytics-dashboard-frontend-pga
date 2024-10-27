@@ -113,7 +113,7 @@ function CardComponent({ title, total, description, icon: Icon }: TCard) {
       <CardContent>
         <CardTitle className="font-bold flex items-center gap-1 mb-1">
           <Icon className="text-primary" />
-          {total}
+          {total?.toLocaleString()}
         </CardTitle>
         <CardDescription className="text-xs text-muted-foreground">
           {description}
